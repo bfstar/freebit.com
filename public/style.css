@@ -648,6 +648,13 @@ body {
     color: var(--text-muted);
 }
 
+.ad-card {
+    border-radius: var(--radius-md);
+    border: 1px dashed rgba(47, 128, 237, 0.35);
+    background: rgba(47, 128, 237, 0.04);
+    padding: 16px;
+}
+
 .policies-section {
     background: var(--bg-card);
     border-radius: var(--radius-lg);
