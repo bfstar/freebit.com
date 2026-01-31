@@ -299,6 +299,106 @@ body {
     color: var(--text-soft);
 }
 
+.market-section {
+    background: var(--bg-card);
+    border-radius: var(--radius-lg);
+    padding: 36px;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+}
+
+.market-summary {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+}
+
+.summary-card {
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border);
+    padding: 16px;
+    background: rgba(47, 128, 237, 0.06);
+    display: grid;
+    gap: 8px;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.summary-card span {
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+
+.summary-card strong {
+    font-size: 1.4rem;
+}
+
+.market-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+}
+
+.exchange-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+}
+
+.exchange-card {
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border);
+    padding: 16px;
+    background: rgba(47, 128, 237, 0.05);
+    display: grid;
+    gap: 6px;
+    font-size: 0.9rem;
+}
+
+.exchange-card strong {
+    font-size: 1rem;
+}
+
+.market-card {
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border);
+    padding: 16px;
+    background: var(--bg-card);
+    display: grid;
+    gap: 8px;
+    box-shadow: 0 10px 20px rgba(18, 24, 38, 0.08);
+}
+
+.market-card h4 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.market-price {
+    font-size: 1.4rem;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.market-change {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.market-change.up {
+    color: #1c9f66;
+}
+
+.market-change.down {
+    color: #d64545;
+}
+
+.market-note {
+    margin: 0;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
 .discussion-section {
     background: rgba(255, 255, 255, 0.9);
     border-radius: var(--radius-lg);
@@ -927,7 +1027,8 @@ body {
     .prompt-section,
     .discussion-section,
     .news-section,
-    .policies-section {
+    .policies-section,
+    .market-section {
         padding: 24px;
     }
 

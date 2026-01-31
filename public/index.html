@@ -19,6 +19,7 @@
             <div class="logo">FREEBIT <span>COMMUNITY</span></div>
             <nav class="site-nav">
                 <a href="#recommend">추천 흐름</a>
+                <a href="#market">마켓</a>
                 <a href="#discussion">토론장</a>
                 <a href="#news">뉴스</a>
                 <a href="#prompt">AI 프롬프트</a>
@@ -86,6 +87,34 @@
                         </div>
                     </div>
                 </div>
+            </section>
+
+            <section id="market" class="section market-section reveal">
+                <div class="section-heading">
+                    <h2>라이브 마켓 펄스</h2>
+                    <p>실시간 코인 흐름을 한눈에 보여주는 글로벌 마켓 보드.</p>
+                </div>
+                <div class="market-summary" data-market-summary>
+                    <div class="summary-card">
+                        <span>GLOBAL CAP</span>
+                        <strong>로딩 중...</strong>
+                    </div>
+                    <div class="summary-card">
+                        <span>24H VOLUME</span>
+                        <strong>로딩 중...</strong>
+                    </div>
+                    <div class="summary-card">
+                        <span>BTC DOMINANCE</span>
+                        <strong>로딩 중...</strong>
+                    </div>
+                </div>
+                <div class="market-grid" data-market-grid>
+                    <!-- JS injects market cards -->
+                </div>
+                <div class="exchange-grid" data-exchange-grid>
+                    <!-- JS injects exchange cards -->
+                </div>
+                <p class="market-note">CoinPaprika 데이터를 기반으로 표시됩니다. API 연결 실패 시 샘플 데이터가 보여집니다.</p>
             </section>
 
             <section id="discussion" class="section discussion-section reveal">
@@ -228,7 +257,7 @@
                     <h2>코인 뉴스 데스크</h2>
                     <p>기사 원문을 요약해 제공하는 샘플 영역입니다. (추후 API 연동, 출처 표기)</p>
                 </div>
-                <div class="news-grid">
+                <div class="news-grid" data-news-grid>
                     <article class="news-card">
                         <span class="news-tag">Market Watch</span>
                         <h3>BTC 변동성 확대, 단기 수급 체크 필요</h3>
